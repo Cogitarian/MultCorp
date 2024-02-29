@@ -1,0 +1,2 @@
+(echo file 'first file.mp4' & echo file 'second file.mp4')
+ffmpeg -safe 0 -f concat -i list.txt -c copy output.mp4
